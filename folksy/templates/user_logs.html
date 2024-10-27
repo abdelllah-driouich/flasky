@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ username }}'s Logs</title>
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Keystroke Logs for {{ username }}</h1>
+    <pre>{{ logs|safe }}</pre>
+    <a href="{{ url_for('index') }}">Back to User List</a>
+</body>
+</html>
